@@ -1,0 +1,330 @@
+Microsoft Windows [Version 10.0.22000.1817]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Simplilearn\Github>git version
+git version 2.40.1.windows.1
+
+D:\Simplilearn\Github>git config --global user.name "kaurdeepraman321"
+
+D:\Simplilearn\Github>git config --global user.email "kaurdeepraman321@gmail.com"
+
+D:\Simplilearn\Github>git init
+Initialized empty Git repository in D:/Simplilearn/Github/.git/
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Simplilearn\Github>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+D:\Simplilearn\Github>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+D:\Simplilearn\Github>git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git1.txt
+
+
+D:\Simplilearn\Github>git add &
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git add .
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git1.txt
+
+
+D:\Simplilearn\Github>git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+D:\Simplilearn\Github>git rm -- cached Git1
+fatal: pathspec 'cached' did not match any files
+
+D:\Simplilearn\Github>git rm --cached Git1
+fatal: pathspec 'Git1' did not match any files
+
+D:\Simplilearn\Github>git rm --cached Git1.txt
+rm 'Git1.txt'
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git1.txt
+
+
+D:\Simplilearn\Github>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\Simplilearn\Github>git config --global user.name "kaurdeepraman321"
+
+D:\Simplilearn\Github>git config --global user.email "kaurdeepraman321@gmail.com"
+
+D:\Simplilearn\Github>git init
+Initialized empty Git repository in D:/Simplilearn/Github/.git/
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitprac.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Simplilearn\Github>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git add .
+
+D:\Simplilearn\Github>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitprac.txt
+
+
+D:\Simplilearn\Github>git commit -m "first commit"
+[master (root-commit) 873f8be] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 gitprac.txt
+
+D:\Simplilearn\Github>git branch -M main
+
+D:\Simplilearn\Github>git remote add origin https://github.com/kaurdeepraman321/simpliprac.git
+
+D:\Simplilearn\Github>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 11.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kaurdeepraman321/simpliprac.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\Simplilearn\Github>git branch raman
+
+D:\Simplilearn\Github>GIT BRANCH
+git: 'BRANCH' is not a git command. See 'git --help'.
+
+D:\Simplilearn\Github>git brranch
+git: 'brranch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+D:\Simplilearn\Github>git branch
+* main
+  raman
+
+D:\Simplilearn\Github>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 673 bytes | 2.00 KiB/s, done.
+From https://github.com/kaurdeepraman321/simpliprac
+   873f8be..f7aea05  main       -> origin/main
+Updating 873f8be..f7aea05
+Fast-forward
+ git prac 2 | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 git prac 2
+
+D:\Simplilearn\Github>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitprac 3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Simplilearn\Github>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\Simplilearn\Github>git add *
+
+D:\Simplilearn\Github>git commit -m "new commit"
+[main 8bda9c1] new commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 gitprac 3.txt
+
+D:\Simplilearn\Github>git branch -M main
+
+D:\Simplilearn\Github>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 101.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kaurdeepraman321/simpliprac.git
+   f7aea05..8bda9c1  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\Simplilearn\Github>git branch -m raman
+fatal: a branch named 'raman' already exists
+
+D:\Simplilearn\Github>git branch
+* main
+  raman
+
+D:\Simplilearn\Github>git branch -m gittest
+
+D:\Simplilearn\Github>git branch
+* gittest
+  raman
+
+D:\Simplilearn\Github>git switch main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+
+D:\Simplilearn\Github>git switch raman
+Switched to branch 'raman'
+
+D:\Simplilearn\Github>git bracnh
+git: 'bracnh' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+D:\Simplilearn\Github>git branch
+  gittest
+  main
+* raman
+
+D:\Simplilearn\Github>git checkout -b develop
+Switched to a new branch 'develop'
+
+D:\Simplilearn\Github>git checkout -b develop main
+fatal: a branch named 'develop' already exists
+
+D:\Simplilearn\Github>git checkout -b develop1 main
+Switched to a new branch 'develop1'
+
+D:\Simplilearn\Github>git branch
+  develop
+* develop1
+  gittest
+  main
+  raman
+
+D:\Simplilearn\Github>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> develop1
+
+
+D:\Simplilearn\Github>git merge main
+Already up to date.
+
+D:\Simplilearn\Github>mkdir newgit
+
+D:\Simplilearn\Github>cd D:\Simplilearn\Github\newgit
+
+D:\Simplilearn\Github\newgit>git init
+Initialized empty Git repository in D:/Simplilearn/Github/newgit/.git/
+
+D:\Simplilearn\Github\newgit>git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+D:\Simplilearn\Github\newgit>git add *
+fatal: pathspec '*' did not match any files
+
+D:\Simplilearn\Github\newgit>
